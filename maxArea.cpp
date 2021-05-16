@@ -5,8 +5,20 @@
 using namespace std;
 
 int maxArea(vector<int>& height) {
-        for(int i = 1; i < height.size(); i++){
-            
+        int firstBoundary = 0;
+        int lastBoundary = height.size() - 1;
+        int maxArea = 0;
+        int area = 0;
+        while((lastBoundary - firstBoundary) > 0){
+            area = min(height[firstBoundary], height[lastBoundary]) * (lastBoundary - firstBoundary);
+            maxArea = max(area, maxArea);
+
+            if(height[firstBoundary] > height[lastBoundary]){
+                lastBoundary --;
+            }else{
+                firstBoundary ++;
+            }
         }
-        return -1;
+
+        return maxArea;
     }

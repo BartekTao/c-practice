@@ -9,7 +9,7 @@ extern int maxArea(vector<int>& nums);
 
 int main(){
     // maxArea
-    vector<int> nums { 1, 2, 3, 1 };
+    vector<int> nums { 1,8,6,2,5,4,8,3,7 };
     int resultMaxArea = maxArea(nums);
     cout << resultMaxArea;
     cout << endl;
@@ -17,9 +17,9 @@ int main(){
     // findRepeatNumber
     //vector<int> nums { 1, 2, 3, 1 };
 
-    int resultFindRepeatNumber = findRepeatNumber(nums);
+    /*int resultFindRepeatNumber = findRepeatNumber(nums);
     cout << resultFindRepeatNumber;
-    cout << endl;
+    cout << endl;*/
 }
 
 
