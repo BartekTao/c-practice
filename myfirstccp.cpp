@@ -4,35 +4,21 @@
 
 using namespace std;
 
-class Solution {
-public:
-    int findRepeatNumber(vector<int>& nums) {
-        map<int, bool> checkRepeat;
-        for(int i = 0; i < nums.size(); i++){
-            if(checkRepeat[nums[i]])
-                return nums[i];
-            else{
-                checkRepeat[nums[i]] = true;
-            }
-        }
-        return -1;
-    }
-
-    int maxArea(vector<int>& height) {
-        for(int i = 1; i < height.size(); i++){
-            
-        }
-        return -1;
-    }
-};
+extern int findRepeatNumber(vector<int>& nums);
+extern int maxArea(vector<int>& nums);
 
 int main(){
+    // maxArea
     vector<int> nums { 1, 2, 3, 1 };
+    int resultMaxArea = maxArea(nums);
+    cout << resultMaxArea;
+    cout << endl;
 
-    Solution s;
+    // findRepeatNumber
+    //vector<int> nums { 1, 2, 3, 1 };
 
-    int result = s.findRepeatNumber(nums);
-    cout << result;
+    int resultFindRepeatNumber = findRepeatNumber(nums);
+    cout << resultFindRepeatNumber;
     cout << endl;
 }
 
