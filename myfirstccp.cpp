@@ -9,12 +9,19 @@ extern int maxArea(vector<int>& nums);
 extern vector<vector<int>> threeSum(vector<int>& nums);
 extern int threeSumClosest(vector<int>& nums, int target);
 extern int search(vector<int>& nums, int target);
-bool checkPossibility(vector<int>& nums);
+extern bool checkPossibility(vector<int>& nums);
+extern int fibonacci(int n);
 
 int main(){
+    //509. Fibonacci Number
+    int n = 11;
+    int result = fibonacci(n);
+    cout << result;
+    cout << endl;
+    
     //665. Non-decreasing Array
-    vector<int> nums{4,2,3};
-    bool result = checkPossibility(nums);
+    //vector<int> nums{4,2,3};
+    //bool result = checkPossibility(nums);
 
     //33. Search in Rotated Sorted Array
     /*vector<int> nums { 4,5,6,7,0,1,2 };
