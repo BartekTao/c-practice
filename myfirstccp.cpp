@@ -9,14 +9,17 @@ extern int maxArea(vector<int>& nums);
 extern vector<vector<int>> threeSum(vector<int>& nums);
 extern int threeSumClosest(vector<int>& nums, int target);
 extern int search(vector<int>& nums, int target);
+bool checkPossibility(vector<int>& nums);
 
 int main(){
+    //665. Non-decreasing Array
+    vector<int> nums{4,2,3};
+    bool result = checkPossibility(nums);
 
-    
     //33. Search in Rotated Sorted Array
-    vector<int> nums { 4,5,6,7,0,1,2 };
+    /*vector<int> nums { 4,5,6,7,0,1,2 };
     int target = 0;
-    int result = search(nums, target);
+    int result = search(nums, target);*/
 
     //16. 3Sum Closest
     /*vector<int> nums { 1,2,4,8,16,32,64,128 };
