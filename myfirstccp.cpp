@@ -8,13 +8,20 @@ extern int findRepeatNumber(vector<int>& nums);
 extern int maxArea(vector<int>& nums);
 extern vector<vector<int>> threeSum(vector<int>& nums);
 extern int threeSumClosest(vector<int>& nums, int target);
+extern int search(vector<int>& nums, int target);
 
 int main(){
+
     
+    //33. Search in Rotated Sorted Array
+    vector<int> nums { 4,5,6,7,0,1,2 };
+    int target = 0;
+    int result = search(nums, target);
+
     //16. 3Sum Closest
-    vector<int> nums { 1,2,4,8,16,32,64,128 };
+    /*vector<int> nums { 1,2,4,8,16,32,64,128 };
     int target = 82;
-    int sult = threeSumClosest(nums, target);
+    int result = threeSumClosest(nums, target);*/
 
     //15. 3Sum
     //vector<int> nums { -1,0,1,2,-1,-4 };
