@@ -11,7 +11,6 @@ extern int threeSumClosest(vector<int>& nums, int target);
 extern int search(vector<int>& nums, int target);
 extern bool checkPossibility(vector<int>& nums);
 extern int fibonacci(int n);
-
 int main(){
 
     //509. Fibonacci Number
