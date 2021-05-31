@@ -15,15 +15,6 @@ struct TreeNode {
 };
 map<int, int> idx_val;
 int root_idx;
-TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
-    root_idx = 0;
-    int id = 0;
-    for(int val : inorder){
-        idx_val[val] = id;
-        id++;
-    }
-    return helper(root_idx, preorder.size()-1, preorder, inorder);
-}
 
 TreeNode* helper(int left_idx, int right_idx, vector<int>& preorder, vector<int>& inorder){
     if(left_idx > right_idx) return nullptr;
@@ -35,3 +26,14 @@ TreeNode* helper(int left_idx, int right_idx, vector<int>& preorder, vector<int>
     root->right = helper(inRootIdx + 1, right_idx, preorder, inorder);
     return root;
 }
+
+TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+    root_idx = 0;
+    int id = 0;
+    for(int val : inorder){
+        idx_val[val] = id;
+        id++;
+    }
+    return helper(root_idx, preorder.size()-1, preorder, inorder);
+}
+
