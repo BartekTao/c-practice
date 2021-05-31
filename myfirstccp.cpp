@@ -14,10 +14,10 @@ extern int fibonacci(int n);
 int main(){
 
     //509. Fibonacci Number
-    /*int n = 11;
+    int n = 11;
     int result = fibonacci(n);
     cout << result;
-    cout << endl;*/
+    cout << endl;
     
     //665. Non-decreasing Array
     //vector<int> nums{4,2,3};
