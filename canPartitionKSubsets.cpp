@@ -9,6 +9,7 @@ bool find(vector<int>& nums, int pos, vector<bool>& visited, int sum, int target
     if(sum == targetNum){
         return find(nums, 0, visited, 0, targetNum, k-1);
     }
+    if(sum > targetNum) return false;
 
     int n_size =  nums.size();
     for(int i = pos; i < n_size; i++ ){
