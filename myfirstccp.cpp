@@ -2,6 +2,7 @@
 #include <vector>
 #include <map>
 
+
 using namespace std;
 
 extern int findRepeatNumber(vector<int>& nums);
@@ -11,13 +12,15 @@ extern int threeSumClosest(vector<int>& nums, int target);
 extern int search(vector<int>& nums, int target);
 extern bool checkPossibility(vector<int>& nums);
 extern int fibonacci(int n);
+extern bool canPartitionKSubsets(vector<int>& nums, int k);
 int main(){
-
+    vector<int> nums{3522,181,521,515,304,123,2512,312,922,407,146,1932,4037,2646,3871,269};
+    bool res = canPartitionKSubsets(nums, 5);
     //509. Fibonacci Number
-    int n = 11;
+    /*int n = 11;
     int result = fibonacci(n);
     cout << result;
-    cout << endl;
+    cout << endl;*/
     
     //665. Non-decreasing Array
     //vector<int> nums{4,2,3};
