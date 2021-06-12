@@ -17,10 +17,17 @@ extern int minCut(string s);
 extern vector<vector<string>> partition(string s);
 extern bool canPartition(vector<int>& nums);
 extern int findMaxForm(vector<string>& strs, int m, int n);
+extern int uniquePaths(int m, int n);
+extern int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid);
 int main(){
+    vector<vector<int>> nums{ {0, 0, 0},{0, 1, 0},{0, 0, 0} };
+    int res = uniquePathsWithObstacles(nums);
+    //[[0,0,0],[0,1,0],[0,0,0]]
+
+    //int res = uniquePaths(3,7);
     //474. Ones and Zeroes
-    vector<string> strs{ "10","0001","111001","1","0" };
-    findMaxForm(strs, 5, 3);
+    /*vector<string> strs{ "10","0001","111001","1","0" };
+    findMaxForm(strs, 5, 3);*/
 
     //416. Partition Equal Subset Sum
     //vector<int> nums{1,5,11,5};
