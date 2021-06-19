@@ -23,8 +23,11 @@ extern bool searchMatrix(vector<vector<int>>& matrix, int target);
 extern bool exist(vector<vector<char>>& board, string word);
 extern int movingCount(int m, int n, int k);
 extern int integerBreak(int n);
+extern double myPow(double x, int n);
 int main(){
-    int res = integerBreak(2);
+    double res = myPow(2, -2);
+    
+    //int res = integerBreak(2);
 
     //int res = movingCount(2, 3, 1);
 
