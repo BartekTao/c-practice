@@ -22,8 +22,11 @@ extern int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid);
 extern bool searchMatrix(vector<vector<int>>& matrix, int target);
 extern bool exist(vector<vector<char>>& board, string word);
 extern int movingCount(int m, int n, int k);
+extern int integerBreak(int n);
 int main(){
-    int res = movingCount(2, 3, 1);
+    int res = integerBreak(2);
+
+    //int res = movingCount(2, 3, 1);
 
     //vector<vector<char>> chars{{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}};
     //vector<vector<char>> chars{{'a'}};
