@@ -24,8 +24,11 @@ extern bool exist(vector<vector<char>>& board, string word);
 extern int movingCount(int m, int n, int k);
 extern int integerBreak(int n);
 extern double myPow(double x, int n);
+extern bool isMatch(string s, string p);
 int main(){
-    double res = myPow(2, -2);
+    bool res = isMatch("aab", "c*a*b");
+    
+    //double res = myPow(2, -2);
     
     //int res = integerBreak(2);
 
