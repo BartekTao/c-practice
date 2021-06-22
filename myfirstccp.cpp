@@ -25,8 +25,11 @@ extern int movingCount(int m, int n, int k);
 extern int integerBreak(int n);
 extern double myPow(double x, int n);
 extern bool isMatch(string s, string p);
+extern int myAtoi(string s);
 int main(){
-    bool res = isMatch("aab", "c*a*b");
+    int res = myAtoi("-91283472332");
+
+    //bool res = isMatch("aab", "c*a*b");
     
     //double res = myPow(2, -2);
     
