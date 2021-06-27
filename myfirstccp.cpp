@@ -5,6 +5,16 @@
 
 using namespace std;
 
+//Definition for a binary tree node.
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
 extern int findRepeatNumber(vector<int>& nums);
 extern int maxArea(vector<int>& nums);
 extern vector<vector<int>> threeSum(vector<int>& nums);
@@ -26,8 +36,17 @@ extern int integerBreak(int n);
 extern double myPow(double x, int n);
 extern bool isMatch(string s, string p);
 extern int myAtoi(string s);
+extern bool isSubtree(TreeNode* root, TreeNode* subRoot);
 int main(){
-    int res = myAtoi("-91283472332");
+    TreeNode* root = new TreeNode(3);
+    root->left = new TreeNode(4, new TreeNode(1), new TreeNode(2));
+    root->right = new TreeNode(5);
+
+    TreeNode* subRoot = new TreeNode(4, new TreeNode(1), new TreeNode(2));
+
+    bool res = isSubtree(root, subRoot);
+
+    //int res = myAtoi("-91283472332");
 
     //bool res = isMatch("aab", "c*a*b");
     

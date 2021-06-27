@@ -9,11 +9,6 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 ListNode *newHead;
-ListNode* reverseList(ListNode* head) {
-    helper(head);
-
-    return newHead;
-}
 ListNode* helper(ListNode* head) {
     if(!head || !head->next){
         newHead = head;
@@ -22,4 +17,9 @@ ListNode* helper(ListNode* head) {
     helper(head->next)->next = head;
     head->next = nullptr;
     return head;
+}
+ListNode* reverseList(ListNode* head) {
+    helper(head);
+
+    return newHead;
 }
