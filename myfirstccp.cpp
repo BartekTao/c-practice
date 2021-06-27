@@ -37,14 +37,18 @@ extern double myPow(double x, int n);
 extern bool isMatch(string s, string p);
 extern int myAtoi(string s);
 extern bool isSubtree(TreeNode* root, TreeNode* subRoot);
+extern vector<int> spiralOrder(vector<vector<int>>& matrix);
 int main(){
-    TreeNode* root = new TreeNode(3);
+    //vector<vector<int>> nums = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+    vector<vector<int>> nums = {{6,9,7}};
+    auto res = spiralOrder(nums);
+    /*TreeNode* root = new TreeNode(3);
     root->left = new TreeNode(4, new TreeNode(1), new TreeNode(2));
     root->right = new TreeNode(5);
 
     TreeNode* subRoot = new TreeNode(4, new TreeNode(1), new TreeNode(2));
 
-    bool res = isSubtree(root, subRoot);
+    bool res = isSubtree(root, subRoot);*/
 
     //int res = myAtoi("-91283472332");
 
