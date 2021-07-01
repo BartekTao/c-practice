@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <iostream>
+#include <queue>
+#include <string>
+#include <sstream>
 
 
 using namespace std;
@@ -38,10 +42,28 @@ extern bool isMatch(string s, string p);
 extern int myAtoi(string s);
 extern bool isSubtree(TreeNode* root, TreeNode* subRoot);
 extern vector<int> spiralOrder(vector<vector<int>>& matrix);
+void rserialize(TreeNode* root, string& ans) {
+        ans+=root ? to_string(root->val)+"," : "#,";
+        if(!root) return;
+        rserialize(root->left, ans);
+        rserialize(root->right, ans);
+    }
+    // Encodes a tree to a single string.
+    string serialize(TreeNode* root) {
+        string ans = "";
+        rserialize(root, ans);
+        return ans;
+    }
 int main(){
+    TreeNode* subRoot = new TreeNode(1, new TreeNode(2), new TreeNode(3, new TreeNode(5), new TreeNode(5)));
+    string ans = serialize(subRoot);
+
+
     //vector<vector<int>> nums = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
-    vector<vector<int>> nums = {{6,9,7}};
-    auto res = spiralOrder(nums);
+    //vector<vector<int>> nums = {{6,9,7}};
+    //auto res = spiralOrder(nums);
+
+    
     /*TreeNode* root = new TreeNode(3);
     root->left = new TreeNode(4, new TreeNode(1), new TreeNode(2));
     root->right = new TreeNode(5);

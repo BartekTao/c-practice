@@ -14,10 +14,10 @@ struct TreeNode {
 
 TreeNode *ans;
 TreeNode *pre;
-void helper(TreeNode* pRootOfTree) {
+void helper2(TreeNode* pRootOfTree) {
     //inorder取得TreeNode
     if(!pRootOfTree) return;
-    Convert(pRootOfTree->left);
+    helper2(pRootOfTree->left);
     //add
     TreeNode *temp = new TreeNode(pRootOfTree->val);
     
@@ -29,12 +29,12 @@ void helper(TreeNode* pRootOfTree) {
     }
     pre = temp;
     
-    Convert(pRootOfTree->right);
+    helper2(pRootOfTree->right);
 }
 
 TreeNode * Convert(TreeNode* pRootOfTree) {
 
-    helper(pRootOfTree);
+    helper2(pRootOfTree);
 
     return ans;
 }
