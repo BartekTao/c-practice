@@ -43,8 +43,11 @@ extern bool isMatch(string s, string p);
 extern int myAtoi(string s);
 extern bool isSubtree(TreeNode* root, TreeNode* subRoot);
 extern vector<int> spiralOrder(vector<vector<int>>& matrix);
+extern vector<vector<int>> permuteUnique(vector<int>& nums);
 int main(){
 
+    vector<int> nums = vector<int> {1, 1, 2};
+    auto res = permuteUnique(nums);
 
     //vector<vector<int>> nums = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
     //vector<vector<int>> nums = {{6,9,7}};
