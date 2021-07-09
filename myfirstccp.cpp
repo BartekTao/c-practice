@@ -44,10 +44,13 @@ extern int myAtoi(string s);
 extern bool isSubtree(TreeNode* root, TreeNode* subRoot);
 extern vector<int> spiralOrder(vector<vector<int>>& matrix);
 extern vector<vector<int>> permuteUnique(vector<int>& nums);
+extern int findKthLargest(vector<int>& nums, int k);
 int main(){
 
-    vector<int> nums = vector<int> {1, 1, 2};
-    auto res = permuteUnique(nums);
+    vector<int> nums = vector<int> {3,2,3,1,2,4,5,5,6};
+    int res = findKthLargest(nums, 4);
+
+    //auto res = permuteUnique(nums);
 
     //vector<vector<int>> nums = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
     //vector<vector<int>> nums = {{6,9,7}};
