@@ -46,7 +46,10 @@ extern bool isSubtree(TreeNode* root, TreeNode* subRoot);
 extern vector<int> spiralOrder(vector<vector<int>>& matrix);
 extern vector<vector<int>> permuteUnique(vector<int>& nums);
 extern int findKthLargest(vector<int>& nums, int k);
+extern int maxSubArray(vector<int>& nums);
 int main(){
+    vector<int> nums = {-2,1,-3,4,-1,2,1,-5,4};
+    int res = maxSubArray(nums);
     
     //int res = findKthLargest(nums, 4);
 
