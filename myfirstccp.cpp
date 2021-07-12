@@ -47,9 +47,38 @@ extern vector<int> spiralOrder(vector<vector<int>>& matrix);
 extern vector<vector<int>> permuteUnique(vector<int>& nums);
 extern int findKthLargest(vector<int>& nums, int k);
 extern int maxSubArray(vector<int>& nums);
+
+/*
+int answ = 0;
+int sss(vector<int>& nums, int w, int i){
+    int len = nums.size();
+    if(i >= len) return 0;
+    int c = sss(nums, w, i+1);
+    if(i == len-1 || nums[i+1] == nums[i] + 1){
+        if(i == 0 && 1 + c >= w){
+            answ += 1 + c - w + 1;
+        }
+        return 1 + c;
+    }else{
+        if(c >= w) answ += c - w + 1;
+        return 1;
+    }
+}
+
+int ss(vector<int>& nums, int w){
+    sss(nums, w, 0);
+    return answ;
+}
+*/
+
 int main(){
-    vector<int> nums = {-2,1,-3,4,-1,2,1,-5,4};
-    int res = maxSubArray(nums);
+    
+    //vector<int> nums = {4,5,1,2,3,4,5,6,78,79,80,999,456,777,0};
+    //int res = ss(nums, 3);
+
+
+    //vector<int> nums = {-2,1,-3,4,-1,2,1,-5,4};
+    //int res = maxSubArray(nums);
     
     //int res = findKthLargest(nums, 4);
 
