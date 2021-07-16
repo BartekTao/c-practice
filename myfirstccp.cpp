@@ -48,6 +48,8 @@ extern vector<vector<int>> permuteUnique(vector<int>& nums);
 extern int findKthLargest(vector<int>& nums, int k);
 extern int maxSubArray(vector<int>& nums);
 extern int numDecodings(string s);
+extern int maxValue(vector<vector<int>>& grid);
+extern int lengthOfLongestSubstring(string s);
 
 int answ = 0;
 int sss(vector<int>& nums, int w, int i){
@@ -91,8 +93,12 @@ int ss(vector<int>& nums, int w){
 }
 
 int main(){
-    string s = "1234";
-    numDecodings(s);
+    int res = lengthOfLongestSubstring("abba");
+    //vector<vector<int>> nums = {{1,3,1},{1,5,1},{4,2,1}};
+    //int res = maxValue(nums);
+
+    //string s = "1234";
+    //numDecodings(s);
 
     //vector<int> nums = {4,1,2,3,5,6,7,8,10,9};
     //int res = ss(nums, 4);
