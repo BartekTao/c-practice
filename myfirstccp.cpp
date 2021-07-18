@@ -51,6 +51,7 @@ extern int numDecodings(string s);
 extern int maxValue(vector<vector<int>>& grid);
 extern int lengthOfLongestSubstring(string s);
 extern int nthUglyNumber(int n);
+extern int firstUniqChar(string s);
 
 int answ = 0;
 int sss(vector<int>& nums, int w, int i){
@@ -94,7 +95,10 @@ int ss(vector<int>& nums, int w){
 }
 
 int main(){
-    int res = nthUglyNumber(10);
+    int res = firstUniqChar("aabb");
+    
+    //int res = nthUglyNumber(10);
+    
     //int res = lengthOfLongestSubstring("abba");
     //vector<vector<int>> nums = {{1,3,1},{1,5,1},{4,2,1}};
     //int res = maxValue(nums);
