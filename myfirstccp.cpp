@@ -52,6 +52,7 @@ extern int maxValue(vector<vector<int>>& grid);
 extern int lengthOfLongestSubstring(string s);
 extern int nthUglyNumber(int n);
 extern int firstUniqChar(string s);
+extern vector<int> searchRange(vector<int>& nums, int target);
 
 int answ = 0;
 int sss(vector<int>& nums, int w, int i){
@@ -95,7 +96,10 @@ int ss(vector<int>& nums, int w){
 }
 
 int main(){
-    int res = firstUniqChar("aabb");
+    vector<int> nums = {5,8,8,8,8,10};
+    vector<int> res = searchRange(nums, 8);
+
+    //int res = firstUniqChar("aabb");
     
     //int res = nthUglyNumber(10);
     
