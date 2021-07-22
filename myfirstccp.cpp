@@ -54,6 +54,7 @@ extern int nthUglyNumber(int n);
 extern int firstUniqChar(string s);
 extern vector<int> searchRange(vector<int>& nums, int target);
 extern int kthSmallest(TreeNode* root, int k);
+extern string reverseWords(string s);
 
 int answ = 0;
 int sss(vector<int>& nums, int w, int i){
@@ -97,10 +98,13 @@ int ss(vector<int>& nums, int w){
 }
 
 int main(){
+    string res = reverseWords("the sky is blue");
+    /*
     TreeNode* root = new TreeNode(3);
     root->left = new TreeNode(1, nullptr, new TreeNode(2));
     root->right = new TreeNode(4);
     int res = kthSmallest(root, 1);
+    */
     
     //vector<int> nums = {5,8,8,8,8,10};
     //vector<int> res = searchRange(nums, 8);
